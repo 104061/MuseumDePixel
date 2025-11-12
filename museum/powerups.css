@@ -1,0 +1,112 @@
+/* Algemeen */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #000; /* zwarte achtergrond */
+  color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  border-bottom: 1px solid #2ecc40; /* groen lijntje */
+}
+
+.logo {
+  max-width: 220px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 4px #2ecc40);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  color: #2ecc40;
+  margin: 0;
+}
+
+/* Tabel */
+main {
+  padding: 20px 15px 40px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: #111;
+  color: #2ecc40;
+  font-weight: 700;
+  text-align: left;
+  padding: 15px 10px;
+  border-bottom: 3px solid #2ecc40;
+  letter-spacing: 1.2px;
+  font-size: 1.1rem;
+  z-index: 10;
+}
+
+tbody tr:hover {
+  background: #222;
+}
+
+tbody td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #222;
+  vertical-align: top;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+/* Iconen in eerste kolom */
+.icon {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  color: #2ecc40;
+  vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  table {
+    min-width: 700px;
+  }
+  thead th, tbody td {
+    font-size: 0.9rem;
+    padding: 10px 6px;
+  }
+}
+
+/* Mirror Arrow Button Styles */
+.arrow-button-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #00ff90;
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow-button-left:hover {
+  background-color: #B108B1;
+  color: #fff;
+}
+

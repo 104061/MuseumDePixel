@@ -1,0 +1,346 @@
+body { 
+    overflow: hidden;
+    --blue: #6976db;
+    --black: #000000;
+    --white: #eeeeee;
+    --transparentblack: rgb(0, 0, 0, 80%);
+    background: var(--blue);
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, rgb(103, 99, 99) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(103, 99, 99) 1px, transparent 1px);
+
+}
+
+
+@font-face {
+    font-family: 'TetrisFont';
+    src: url('../../fonts/Sixtyfour/tetrisfont.ttf') format('truetype');
+    font-display: swap;
+}
+
+.tetris2{
+    rotate: 75deg;
+    scale: 1.5;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -50%;
+    left: 35%;
+    animation: moving2 13s linear infinite;
+}
+.tetris1{
+    rotate: 75deg;
+    scale: 1.5;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -50%;
+    left: 70%;
+    animation: moving1 10s linear infinite;
+}
+
+
+.tetris3{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    rotate: 125deg;
+    scale: 1.5;
+    animation: moving3 10s linear infinite;
+
+}
+
+@keyframes moving1{
+    0% {
+        left: 20%;
+        top: -50%;
+        rotate: 125deg;
+    }
+    50%{
+        left: 45%;
+        top: 100%;
+        rotate: 75deg;
+    }
+    100%{
+        left: 15%;
+        top: 100%;
+        rotate: 125deg;
+    }
+    
+}
+
+@keyframes moving2{
+    0% {
+        top: -50%;
+        left: 60%;
+        rotate: 50deg;
+    }
+    50%{
+        top: 65%;
+        left: 85%;
+        rotate: 125deg;
+    }
+    100%{
+        top: 100%;
+        left: 50%;
+        rotate: 50deg;
+    }
+    
+}
+
+@keyframes moving3{
+    0% {
+        top: -50%;
+        left: 0%;
+        rotate: 50deg;
+    }
+    50%{
+        top: 65%;
+        left: 10%;
+        rotate: 125deg;
+    }
+    100%{
+        top: 100%;
+        left: 5%;
+        rotate: 50deg;
+    }
+    
+}
+
+
+
+
+
+
+.logo {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    left: 45%;
+}
+
+.homepagebutton{
+    opacity: 0;
+    transition: 1s;
+}
+
+.homepagebutton.show{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    border-radius: 50%90%50%90%/20%90%20%90%;
+    border: var(--white) 2px solid;
+    opacity: 1;
+}
+
+.homepagebutton a{
+    padding: 5px 5px;
+    font-size: 50px;
+    background: rgb(151, 172, 243);
+    border-radius: 50%90%50%90%/20%90%20%90%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: #5c35d1;
+}
+.logo.show {
+    opacity: 1;
+    top: 25.5%;
+    left: 43%;
+    font-size: 60px;
+    transition: 1s;
+}
+
+.logo img{
+    filter: saturate(1.1)contrast(110%);
+}
+/* achtergrond afbeelding */
+.backgroundimagecont {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.backgroundimage {
+    filter: saturate(1.1)contrast(125%);
+    position: fixed;
+    height: 45%;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.backgroundimage.show {
+    position: fixed;
+    height: 55%;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    transition: 1s;
+}
+/* achtergrond afbeelding */
+
+/* logos */
+
+/* blokken */
+.linker {
+    opacity: 0;
+}
+
+.midden {
+    opacity: 0;
+}
+
+.rechter {
+    opacity: 0;
+}
+
+.linker.show {
+    box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    color: var(--white);
+    top: 66%;
+    left: 5.4%;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    position: absolute;
+    width: 25vw;
+    height: 13vw;
+    opacity: 1;
+    background-color: var(--transparentblack);
+    transition: 1s;
+    border: 1px, solid, var(--blue);
+}
+
+.midden.show {
+    box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    color: var(--white);
+    left: 37.5%;
+    top: 60%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: absolute;
+    width: 25vw;
+    height: 13vw;
+    opacity: 1;
+    background-color: var(--transparentblack);
+    transition: 1s;
+    border: 1px, solid, var(--blue);
+}
+
+.rechter.show {
+    box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px 16px 112px 30px rgba(0, 0, 0, 0.74);
+    color: var(--white);
+    top: 66%;
+    right: 5.4%;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    position: absolute;
+    width: 25vw;
+    height: 13vw;
+    opacity: 1;
+    background-color: var(--transparentblack);
+    transition: 1s;
+    border: 1px, solid, var(--blue);
+}
+
+.linker video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px, solid, var(--blue);
+}
+
+.midden video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px, solid, var(--blue);
+}
+.rechter video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px, solid, var(--blue);
+}
+
+
+
+/* continue blokken */
+.blokbutton{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 15%;
+    height: 20%;
+    text-align: center;
+    background-color: rgb(149, 123, 255);
+    color: var(--white);
+    box-shadow: 0px 0px 5px rgb(149, 123, 255), 
+    0px 0px 25px rgb(149, 123, 255);
+    border-radius: 30%70%70%30%/30%30%70%70%;
+    font-size: 40px;
+    text-decoration: none;
+    z-index: 0;
+}
+
+
+.blokbutton::before {
+    top: -2%;
+    left: -3%;
+    content: "";
+    position: absolute;
+    width: 110%; 
+    height: 110%; 
+    border-radius: inherit; 
+    background-image: linear-gradient(180deg, #ff00c8, cyan);
+    animation: colorVibration 5s ease-in-out infinite alternate;
+    transition: all 2s linear;
+    z-index: -1;
+}
+
+.blokbutton::after{
+    content: "";
+    position: absolute;
+    background: rgb(149, 123, 255);
+    inset: 0px;
+    border-radius: 30%70%70%30%/30%30%70%70%;
+    z-index: -1;
+    
+}
+
+@keyframes colorVibration {
+    0% {
+        background-image: linear-gradient(180deg, #5c35d1, rgb(204, 102, 251));
+    }
+    100% {
+        background-image: linear-gradient(180deg, #5c35d1, rgb(204, 102, 251));
+    }
+}
+
+@keyframes animate{
+    from{
+        border-radius: 30%70%70%30%/30%30%70%70%;
+    }
+    
+    to{
+        border-radius: 20%60%60%20%/10%10%30%30%;
+    }
+}

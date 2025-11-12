@@ -1,0 +1,73 @@
+/*buttons homepage*/
+#button1 {
+   position: absolute;
+    top: 770px;
+    left: 690px;
+    padding: 30px 30px;
+    font-size: 20px;
+    background-color: #f2ab27;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Button2 {
+   position: absolute;
+    top: 770px;
+    left: 1050px;
+    padding: 30px 30px;
+    font-size: 20px;
+    background-color: #f2ab27;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Button3 {
+   position: absolute;
+    top: 770px;
+    left: 1390px;
+    padding: 30px 40px;
+    font-size: 20px;
+    background-color: #f2ab27;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+*/
+body{
+    background-image: url('images/desktop-wallpaper-stardew-valley-and-background-cool-stardew-valley.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: none;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+#homepage-button {
+    position: absolute;
+     top: 50px;
+     left: 50px;
+     padding: 10px 10px;
+     font-size: 50px;
+     background-color: #f2ab27;
+     border: none;
+     border-radius: 50%;
+     cursor: pointer;
+}

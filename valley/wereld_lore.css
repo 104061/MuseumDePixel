@@ -1,0 +1,55 @@
+/*character screen page*/
+
+body{
+    background-image: url('images/wallpapersden.com_stardew-valley-hd-gaming-background_1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: none;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.mijn-box{
+    border: 8px solid rgb(126, 67, 11);
+    border-radius: 30px;
+     padding: 15px;         /* 15px ruimte binnen de rand */
+    margin: 10px;          /* 10px ruimte rondom de box */
+    width: 900px;          /* 300 pixels breed */
+    background-color: lightgray; /* Lichtgrijze achtergrondkleur */
+    box-sizing: border-box;
+    background-color: #c49e57;
+    
+}
+
+.mijn-box2{
+    border: 8px solid rgb(126, 67, 11);
+    border-radius: 30px;
+     padding: 15px;         /* 15px ruimte binnen de rand */
+    margin: 10px;          /* 10px ruimte rondom de box */
+    width: 860px;          /* 300 pixels breed */
+    background-color: lightgray; /* Lichtgrijze achtergrondkleur */
+    box-sizing: border-box;
+    background-color: #e7a222;
+    float: right;
+}
+
+iframe{
+    width: 190px;
+    height: 190px;
+    float: right;
+}
+#button5 {
+   position: absolute;
+    top: 770px;
+    left: 60px;
+    padding: 30px 30px;
+    font-size: 20px;
+    background-color: #f2ab27;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

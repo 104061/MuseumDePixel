@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EA SPORTS FC26</title>
+<script src="fifa_hom_page.js"></script>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+
+<style>
+    /* ===== ALGEMENE STIJL ===== */
+    body {
+        margin: 0;
+        background-color: #000;
+        font-family: 'Orbitron', sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+
+    /* ===== HEADER LOGO LINKS BOVEN ===== */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-logo img {
+        height: 50px; /* Adjusted size for better visibility */
+    }
+
+    .header-logo span {
+        font-size: 30px;
+        font-weight: 700;
+        color: #00ff90;
+        letter-spacing: 1px;
+    }
+
+    /* ===== TITEL MIDDEN (EA SPORTS FC26) ===== */
+    .title {
+        margin-top: 30px;
+    }
+
+    .title img {
+        width: 120px;
+    }
+
+    .title h1 {
+        font-size: 90px;
+        font-weight: 800;
+        margin: 10px 0;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+
+    /* ===== NAVIGATIE KNOPPEN ===== */
+    .nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .nav button {
+        background-color: #1e1e1e;
+        border: none;
+        color: #fff;
+        padding: 12px 40px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s;
+        text-transform: uppercase;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .nav button:hover {
+        background-color: #00ff90;
+        color: #000;
+    }
+
+    
+
+    /* ===== HOOFDAFBEELDING ===== */
+    .main-image {
+        margin: 20px auto;
+        width: 70%;
+        max-width: 2000px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 30px rgba(0, 191, 255, 0.4);
+    }
+
+    .main-image img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .homepagebutton{
+        position: relative;
+        width: 5vw;
+        height: 2vw;
+        border: green 12px;
+    }
+
+    .homepagebutton a{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        color: rgb(68, 68, 68);
+        font-size: 30px;
+        background: #00ff90;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+    <!-- LOGO LINKS BOVEN -->
+    <div class="header">
+        <div class="header-logo">
+            <img src="https://fifauteam.com/images/fc26/logo/long-green.webp" alt="EA Sports logo">
+            <span></span>
+        </div>
+        <div class="homepagebutton">
+            <a href="../Homepage/homepage.html">←</a>
+        </div>
+    </div>
+
+    <!-- TITEL MIDDEN -->
+     
+    <div class="title">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg/1024px-EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg.png" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1024px; width: 305px; height: 76px; margin: 37.5px 0px;" alt="File:EAFC26 SEASONAL SOLID CHALK WHITE HORIZONTAL RGB.svg - Wikimedia  Commons" jsname="kn3ccd">
+        <h1></h1>
+    </div>
+
+    <!--KNOPPEN -->
+    <div class="nav">
+        <button onclick="window.location.href='informatie.html'">informatie</button>
+        <button onclick="window.location.href='characters.html'">characters</button>
+        <button onclick="window.location.href='powerups.html'">powerups</button>
+    </div>
+
+    <!-- AFBEELDING -->
+    <div class="main-image">
+        <img src="https://evilgamerz.com/wp-content/uploads/2025/09/ea-sports-fc262.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 2400px; height: 500px; margin: 0px; width: 1000px;" alt="EA Sports FC 26 - Evilgamerz" jsname="kn3ccd">
+    </div>
+</body>
+</html>
+
